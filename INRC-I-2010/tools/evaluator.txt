@@ -1,0 +1,20 @@
+the command can be run as follows:
+	java -jar evaluator.jar [options] schedulingperiod.xml solution.xml
+
+example: java -jar evaluator.jar -p toy1.xml toy1_sol.xml
+
+Make sure evaluator.jar is in the CLASSPATH.
+
+Options are:
+	-h	prints help information about the use of the evaluator
+	-p	option only to print the value of the objective function without the violations per employee
+	
+When no option is given, the evaluator gives as output
+	- a representation of the solution
+	- an overview of the violations of the solution per employee
+
+For each violation, the value of the violation and the position (timeunit) where the violation occurs is given.
+	e.g. Maximum number of consecutive working days: 2 - pos: 20
+		means that an employee is working two days more than 
+		the number of maximum allowed consecutive working days. 
+		The series of consecutive working days ends at time unit 20.

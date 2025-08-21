@@ -1,0 +1,12 @@
+NRP Competition Solution Converter
+
+java -jar solutionconverter.jar -h
+java -jar solutionconverter.jar -xml instance solution
+java -jar solutionconverter.jar -txt instance solution
+
+
+    instance    the xml file representing the problem instance
+    solution    the file representing the solution
+    -h          print this help information
+    -xml        convert xml solution to txt format
+    -txt        convert txt solution to xml format

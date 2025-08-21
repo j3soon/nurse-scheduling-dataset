@@ -1,0 +1,11 @@
+NRP Competition XML to TXT Problem Converter
+
+java -jar problemconverter.jar -h
+java -jar problemconverter.jar -d dir
+java -jar problemconverter.jar -f instance
+
+
+    instance    the xml file representing the problem instance
+    -h          print this help information
+    -d    		convert all files in the given directory
+    -f    		convert the given instance
